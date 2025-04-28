@@ -40,16 +40,10 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 
 function openFacebookGallery() {
-  var appLink = "fb://page/61557984896153"; // Your Page ID
-  var webLink = "https://www.facebook.com/kanpuryoungfightersclub/photos"; // Normal website link
+ var webLink = "https://www.facebook.com/kanpuryoungfightersclub/photos"; // Direct web link
 
-  // Try to open in app
-  window.location = appLink;
-
-  // After short delay, fallback to web version if app not installed
-  setTimeout(function() {
-    window.location = webLink;
-  }, 300);
+  window.open(webLink, "_blank"); // Open in a new browser tab/window
+  
 }
 
 
