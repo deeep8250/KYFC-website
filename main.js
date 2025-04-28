@@ -36,4 +36,21 @@ const observer = new IntersectionObserver((entries, observer) => {
   observer.observe(achievementsDiv);
   const certificateDiv = document.getElementById('certifications');
   observer.observe(certificateDiv)
-  
+
+
+
+function openFacebookGallery() {
+  var appLink = "fb://page/61557984896153"; // Your Page ID
+  var webLink = "https://www.facebook.com/kanpuryoungfightersclub/photos"; // Normal website link
+
+  // Try to open in app
+  window.location = appLink;
+
+  // After short delay, fallback to web version if app not installed
+  setTimeout(function() {
+    window.location = webLink;
+  }, 300);
+}
+
+
+
