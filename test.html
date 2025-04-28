@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ADYASAKTI</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header,
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .team-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member {
+            display: flex;
+            /* Aligns items horizontally */
+            align-items: center;
+            /* Aligns items vertically in the center */
+            margin-top: 20px;
+        }
+
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* This will make the container circular */
+            margin-right: 20px; /* Adds spacing between image and text */
+            overflow: hidden; /* Ensures no part of the image spills outside the circular mask */
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%; /* Changes from 'auto' to '100%' to ensure the image covers the entire circle */
+            object-fit: cover; /* Ensures the image covers the space without distorting aspect ratio */
+        }
+
+
+        .details {
+            margin-top: 0;
+            /* Reduces the gap */
+        }
+
+        .details h3 {
+            margin: 0;
+            /* Removes margin from the name */
+            font-size: 18px;
+            /* Makes the name more prominent */
+        }
+
+        .details p {
+            margin: 4px 0;
+        }
+
+        .contact-link {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .back-button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <a href="javascript:history.back()" class="back-button">Back</a>
+
+    <div class="team-container">
+        <!-- CEO -->
+        <div class="team-member">
+            <div class="profile-pic">
+                <img src="resources/tanmoy.png" alt="CEO">
+            </div>
+            <div class="details">
+                <h3>তন্ময় মন্ডল </h3>
+                <p><strong>Role:</strong> সেক্রেটারি</p>
+                <p><strong>Education:</strong> Higher secondry </p>
+                
+            </div>
+        </div>
+        <!-- Development & Fundraising Manager -->
+        <div class="team-member">
+            <div class="profile-pic">
+                <img src="resources/sushant.png" alt="Development Manager">
+            </div>
+            <div class="details">
+                <h3>সুশান্ত হাতি</h3>
+                <p><strong>Role:</strong>সভাপতি</p>
+                <p><strong>Education:</strong>Higher secondry</p>
+            </div>
+        </div>
+        <!-- IT and Technical Support -->
+        <div class="team-member">
+            <div class="profile-pic">
+                <img src="resources/saurav.jpg" alt="IT Support">
+            </div>
+            <div class="details">
+                <h3>সৌরভ মন্ডল</h3>
+                <p><strong>Role:</strong>কোষাধ্যক্ষ</p>
+                <p><strong>Education:</strong> Bachelor of Computer Application</p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/918250050806" target="_blank"
+                        class="contact-link">+91 8016046723</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 ADYASAKTI - All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
